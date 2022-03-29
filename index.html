@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Validation</title>
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+     <main class="container">
+        <!--Inicio Seccion bienvenida -->
+         <section id="newTarjet" class="newTarjet">
+            <h1>Agregar nueva tarjeta </h1>
+            <form class="usuarioInformation">
+                <div >
+                <input id="numberTarjet" class="numberTarjet" type="text" name="numberTarjet" placeholder="Número de la tarjeta"/>
+                </div>
+                <input id="dateExpiration" class="dateExpiration" type="text" name="dateExpiration" placeholder="Fecha de Expiración"/>
+                </div>
+                <div>
+                <input id="code-cvv" class="code-cvv" type="text" name="code-cvv" placeholder="Código CVV">
+                </div>
+                <div>           
+                <input id="userName" class="userName" type="text" name="userName" placeholder="Nombre"/>
+                </div>
+                <div>
+                <input id="userLastname" class="userLastname" type="text" name="userLastname" placeholder="Apellido"/>
+                </div>
+
+            </form>
+            <button type="button" onclick="validation();" class="validation"> 
+            Validar Tarjeta
+            </button>
+         </section>
+        <!--Fin Seccion trivia -->
+         <section id="creditCard" class="creditCard">
+           <img src="imagen/creditcard.png" alt="CreditCard" width="600px" height="400px" class="crediCardImage">
+           <p id="cvv">123</p>
+           <p id="number">1234567890123456</p>
+           
+           <p id="name">Heike Tineo Cruz</p>
+           <p id="caducidad">24/02</p>
+         </section>
+        <script src="assets/script.js"></script>
+     </main>
+</body>
+</html>

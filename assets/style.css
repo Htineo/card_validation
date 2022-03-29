@@ -1,0 +1,81 @@
+html {
+  background: linear-gradient(135.32deg, #e5e5e5 24.86%, #ffffff 100%);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  place-items: center;
+}
+h1{
+    margin-bottom: 50 px;
+    font-family:'Lucida Sans';
+    font-style: normal;
+    font-size: 48px;
+    }
+.newTarjet {
+    text-align: center;
+}
+input{
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #F6F6F6;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 0px;
+}
+button{
+    margin-top: 30px;
+    padding: 10px;
+    width: 300px;
+    height: 75px;
+    border-radius: 8px;
+    background: #FDBC12;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0px;
+    font-size: 32px;
+}
+p{
+    font-family:'Lucida Sans';
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.creditCard{
+    /* background-color: red; */
+    display: grid;
+    place-items: center;
+    position: relative;
+    }
+#cvv{
+    position: absolute;
+    /* background-color: blue; */
+    top: 50px;
+    right: 80px;
+}
+#number{
+    position: absolute;
+    /* background-color: blue; */
+    top: 180px;
+    left: 80px;
+    font-size: 24px;
+}
+#name{
+    position: absolute;
+    /* background-color: blue; */
+    top: 270px;
+    left: 80px;
+    font-size: 24px;
+}
+#caducidad{
+    position: absolute;
+    /* background-color: blue; */
+    top: 270px;
+    right: 80px;
+    font-size: 24px;
+}
+
+      /* display: grid;
+  justify-items: center; */
+
+

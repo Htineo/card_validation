@@ -13,7 +13,7 @@ h1{
     font-style: normal;
     font-size: 48px;
     }
-.newTarjet {
+.new_Card {
     text-align: center;
 }
 input{
@@ -41,7 +41,7 @@ p{
     color: #FFFFFF;
 }
 
-.creditCard{
+.Card{
     /* background-color: red; */
     display: grid;
     place-items: center;
@@ -60,21 +60,20 @@ p{
     left: 80px;
     font-size: 24px;
 }
-#name{
+#full_Name{
     position: absolute;
     /* background-color: blue; */
     top: 270px;
     left: 80px;
     font-size: 24px;
 }
-#caducidad{
+#expiration{
     position: absolute;
     /* background-color: blue; */
     top: 270px;
     right: 80px;
     font-size: 24px;
 }
-
       /* display: grid;
   justify-items: center; */
 

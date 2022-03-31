@@ -9,23 +9,23 @@
 </head>
 <body>
      <main class="container">
-        <!--Inicio Seccion bienvenida -->
-         <section id="newTarjet" class="newTarjet">
+        <!--Ingreso de Datos -->
+         <section id="new_Card" class="new_Card">
             <h1>Agregar nueva tarjeta </h1>
-            <form class="usuarioInformation">
+            <form>
                 <div >
-                <input id="numberTarjet" class="numberTarjet" type="text" name="numberTarjet" placeholder="Número de la tarjeta"/>
+                <input id="card_Number" class="card_Number" type="text" name="card_Number" placeholder="Número de la tarjeta"/>
                 </div>
-                <input id="dateExpiration" class="dateExpiration" type="text" name="dateExpiration" placeholder="Fecha de Expiración"/>
+                <input id="expiration_Date" class="expiration_Date" type="date" name="expiration_Date" placeholder="Fecha de Expiración"/>
                 </div>
                 <div>
-                <input id="code-cvv" class="code-cvv" type="text" name="code-cvv" placeholder="Código CVV">
+                <input id="cvv_Number" class="cvv_Number" type="text" name="cvv_Number" placeholder="cvv">
                 </div>
                 <div>           
-                <input id="userName" class="userName" type="text" name="userName" placeholder="Nombre"/>
+                <input id="name_Card" class="name_Card" type="text" name="name_Card" placeholder="Nombre"/>
                 </div>
                 <div>
-                <input id="userLastname" class="userLastname" type="text" name="userLastname" placeholder="Apellido"/>
+                <input id="lastname_Card" class="lastname_Card" type="text" name="lastname_Card" placeholder="Apellido"/>
                 </div>
 
             </form>
@@ -33,14 +33,15 @@
             Validar Tarjeta
             </button>
          </section>
-        <!--Fin Seccion trivia -->
-         <section id="creditCard" class="creditCard">
+        <!--Visualización de valores en la Tarjeta -->
+         <section id="Card" class="Card">
            <img src="imagen/creditcard.png" alt="CreditCard" width="600px" height="400px" class="crediCardImage">
-           <p id="cvv">123</p>
-           <p id="number">1234567890123456</p>
-           
-           <p id="name">Heike Tineo Cruz</p>
-           <p id="caducidad">24/02</p>
+
+           <p id="number"></p>
+           <p id="expiration"></p>
+           <p id="cvv"></p>
+           <p id="full_Name"></p>
+
          </section>
         <script src="assets/script.js"></script>
      </main>

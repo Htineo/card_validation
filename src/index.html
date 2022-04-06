@@ -14,18 +14,18 @@
             <h1>Agregar nueva tarjeta </h1>
             <form>
                 <div >
-                <input id="card_Number" class="card_Number" type="text" name="card_Number" placeholder="Número de la tarjeta"/>
+                <input id="cardNumber" class="cardNumber" type="string" name="cardNumber" placeholder="Número de la tarjeta"/>
                 </div>
-                <input id="expiration_Date" class="expiration_Date" type="date" name="expiration_Date" placeholder="Fecha de Expiración"/>
+                <input id="expirationDate" class="expirationDate" type="text" name="expirationDate" placeholder="Fecha de Expiración"/>
                 </div>
                 <div>
-                <input id="cvv_Number" class="cvv_Number" type="text" name="cvv_Number" placeholder="cvv">
+                <input id="cvvNumber" class="cvvNumber" type="text" name="cvvNumber" placeholder="cvv">
                 </div>
                 <div>           
-                <input id="name_Card" class="name_Card" type="text" name="name_Card" placeholder="Nombre"/>
+                <input id="nameCard" class="nameCard" type="text" name="nameCard" placeholder="Nombre"/>
                 </div>
                 <div>
-                <input id="lastname_Card" class="lastname_Card" type="text" name="lastname_Card" placeholder="Apellido"/>
+                <input id="lastnameCard" class="lastnameCard" type="text" name="lastnameCard" placeholder="Apellido"/>
                 </div>
 
             </form>
@@ -37,14 +37,15 @@
          <section id="Card" class="Card">
            <img src="imagen/creditcard.png" alt="CreditCard" width="600px" height="400px" class="crediCardImage">
 
-           <p id="number"></p>
+           <p id="creditCardNumber"></p>
            <p id="expiration"></p>
            <p id="cvv"></p>
-           <p id="full_Name"></p>
+           <p id="fullName"></p>
 
          </section>
-        <script src="index.js"></script>
-        <script src="validator.js"></script>
+          <script src="validator.js"></script>
+          <script src="index.js"></script>
+
 
      </main>
 </body>

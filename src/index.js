@@ -1,31 +1,21 @@
+let creditCardNumber = document.getElementById("cardNumber");
+let expiration = document.getElementById("expirationDate");      
+let cvv = document.getElementById("cvvNumber");
+let nameCard = document.getElementById("nameCard");
+let lastname = document.getElementById("lastnameCard");
+const asterisco ="#";
 
-
-/**
- * - Obtener los datos del formularios
- * - Monstrar el nombre y apellido en HTML
- * - Crear la funcion de algoritmo de luhn
- * - Mostrar los 4 
- */
-function validation ()
-{
-    getinformation()
-   
+function validation (){ 
+    if(creditCardNumber.length=16){
+    validator.isValid()
+    validator.maskify()
+    }
+    else{
+        alert("No es posible validar")
+        document.getElementById("creditCardNumber").innerHTML= creditCardNumber.value;
+        document.getElementById("expiration").innerHTML= expiration.value;
+        document.getElementById("cvv").innerHTML= cvv.value;
+        document.getElementById("fullName").innerHTML= nameCard.value +" "+ lastname.value;
+    }
+    
 }
-
-function getinformation()
-{
-const asterisco ="*"
-let number = document.getElementById("card_Number");
-document.getElementById("number").innerHTML= asterisco.repeat(12) + number.value.slice(12,16);
-let expiration = document.getElementById("expiration_Date");
-document.getElementById("expiration").innerHTML= expiration.value;
-let cvv = document.getElementById("cvv_Number")
-document.getElementById("cvv").innerHTML= cvv.value;
-let name_Card = document.getElementById("name_Card");
-let lastname = document.getElementById("lastname_Card");
-document.getElementById("full_Name").innerHTML= name_Card.value +" "+ lastname_Card.value;
-}
-
-
-
-

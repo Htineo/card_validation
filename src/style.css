@@ -42,39 +42,32 @@ p{
 }
 
 .Card{
-    /* background-color: red; */
-    display: grid;
+     display: grid;
     place-items: center;
     position: relative;
     }
 #cvv{
     position: absolute;
-    /* background-color: blue; */
     top: 50px;
     right: 80px;
 }
-#number{
+#creditCardNumber{
     position: absolute;
-    /* background-color: blue; */
     top: 180px;
     left: 80px;
     font-size: 24px;
 }
-#full_Name{
+#fullName{
     position: absolute;
-    /* background-color: blue; */
     top: 270px;
     left: 80px;
     font-size: 24px;
 }
 #expiration{
     position: absolute;
-    /* background-color: blue; */
     top: 270px;
     right: 80px;
     font-size: 24px;
 }
-      /* display: grid;
-  justify-items: center; */
 
 

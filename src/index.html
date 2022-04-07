@@ -11,22 +11,22 @@
      <main class="container">
         <!--Ingreso de Datos -->
          <section id="new_Card" class="new_Card">
-            <h1>Agregar nueva tarjeta </h1>
+            <h1>Agregar Tarjeta </h1>
+            <div class="line"></div>
             <form>
                 <div >
                 <input id="cardNumber" class="cardNumber" type="string" name="cardNumber" placeholder="Número de la tarjeta"/>
                 </div>
-                <input id="expirationDate" class="expirationDate" type="text" name="expirationDate" placeholder="Fecha de Expiración"/>
+                <div class="inputs-group">
+                  <input id="expirationDate" class="expirationDate" type="text" name="expirationDate" placeholder="MM/AA"/>
+                  <input id="cvvNumber" class="cvvNumber" type="text" name="cvvNumber" placeholder="cvv">
                 </div>
-                <div>
-                <input id="cvvNumber" class="cvvNumber" type="text" name="cvvNumber" placeholder="cvv">
+               
+                <div class="inputs-group">           
+                  <input id="nameCard" class="nameCard" type="text" name="nameCard" placeholder="Nombre"/>
+                  <input id="lastnameCard" class="lastnameCard" type="text" name="lastnameCard" placeholder="Apellido"/>
                 </div>
-                <div>           
-                <input id="nameCard" class="nameCard" type="text" name="nameCard" placeholder="Nombre"/>
-                </div>
-                <div>
-                <input id="lastnameCard" class="lastnameCard" type="text" name="lastnameCard" placeholder="Apellido"/>
-                </div>
+             
 
             </form>
             <button type="button" onclick="validation();" class="validation"> 
@@ -42,6 +42,12 @@
            <p id="cvv"></p>
            <p id="fullName"></p>
 
+           <div id="validMessage" class="message">
+              <img src="Imagen/check.png" alt=""> Tarjeta Válida
+           </div>
+           <div id="invalidMessage" class="message">
+            <img src="Imagen/close.png" alt=""> Tarjeta No Válida
+           </div>
          </section>
           <script src="validator.js"></script>
           <script src="index.js"></script>

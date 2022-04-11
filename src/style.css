@@ -16,7 +16,7 @@ h1 {
     font-size: 48px;
 }
 
-.new_Card {
+.newCard {
     text-align: center;
 }
 
@@ -47,7 +47,7 @@ p {
     color: #FFFFFF;
 }
 
-.Card {
+.card {
     display: grid;
     place-items: center;
     position: relative;
@@ -80,7 +80,7 @@ p {
     font-size: 24px;
 }
 
-.inputs-group {
+.inputsGroup {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;

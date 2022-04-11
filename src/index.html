@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Validation</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Validation</title>
+  <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-     <main class="container">
-        <!--Ingreso de Datos -->
-         <section id="new_Card" class="new_Card">
-            <h1>Agregar Tarjeta </h1>
-            <div class="line"></div>
-            <form>
-                <div >
-                <input id="cardNumber" class="cardNumber" type="string" name="cardNumber" placeholder="Número de la tarjeta"/>
-                </div>
-                <div class="inputs-group">
-                  <input id="expirationDate" class="expirationDate" type="text" name="expirationDate" placeholder="MM/AA"/>
-                  <input id="cvvNumber" class="cvvNumber" type="text" name="cvvNumber" placeholder="cvv">
-                </div>
-               
-                <div class="inputs-group">           
-                  <input id="nameCard" class="nameCard" type="text" name="nameCard" placeholder="Nombre"/>
-                  <input id="lastnameCard" class="lastnameCard" type="text" name="lastnameCard" placeholder="Apellido"/>
-                </div>
-             
+  <main class="container">
 
-            </form>s
-            <button type="button" onclick="validation();" class="validation"> 
-            Validar Tarjeta
-            </button>
-         </section>
-        <!--Visualización de valores en la Tarjeta -->
-         <section id="Card" class="Card">
-           <img src="imagen/creditcard.png" alt="CreditCard" width="600px" height="400px" class="crediCardImage">
+    <!--Ingreso de Datos -->
+    <section id="new_Card" class="new_Card">
+      <h1>Agregar Tarjeta </h1>
+      <div class="line"></div>
+      <form>
+        <div>
+          <input id="cardNumber" class="cardNumber" type="string" name="cardNumber"
+            placeholder="Número de la tarjeta" />
+        </div>
+        <div class="inputs-group">
+          <input id="expirationDate" class="expirationDate" type="text" name="expirationDate" placeholder="MM/AA" />
+          <input id="cvvNumber" class="cvvNumber" type="text" name="cvvNumber" placeholder="cvv">
+        </div>
 
-           <p id="creditCardNumber"></p>
-           <p id="expiration"></p>
-           <p id="cvv"></p>
-           <p id="fullName"></p>
+        <div class="inputs-group">
+          <input id="nameCard" class="nameCard" type="text" name="nameCard" placeholder="Nombre" />
+          <input id="lastnameCard" class="lastnameCard" type="text" name="lastnameCard" placeholder="Apellido" />
+        </div>
 
-           <div id="validMessage" class="message">
-              <img src="Imagen/check.png" alt=""> Tarjeta Válida
-           </div>
-           <div id="invalidMessage" class="message">
-            <img src="Imagen/close.png" alt="">fffffff Tarjeta No Válida
-           </div>
-         </section>
-          <script src="validator.js"></script>
-          <script src="index.js"></script>
+      </form>s
+      <button type="button" onclick="validation();" class="validation">
+        Validar Tarjeta
+      </button>
+      
+    <!--Visualización de valores en la Tarjeta -->
+    </section>
+    <section id="Card" class="Card">
+      <img src="imagen/creditcard.png" alt="CreditCard" width="600px" height="400px" class="crediCardImage">
 
+      <p id="creditCardNumber"></p>
+      <p id="expiration"></p>
+      <p id="cvv"></p>
+      <p id="fullName"></p>
 
-     </main>
+      <div id="validMessage" class="message">
+        <img src="Imagen/check.png" alt=""> Tarjeta Válida
+      </div>
+      <div id="invalidMessage" class="message">
+        <img src="Imagen/close.png" alt="">Tarjeta No Válida
+      </div>
+
+    </section>
+    <script src="validator.js"></script>
+    <script src="index.js"></script>
+  </main>
 </body>
-</html>
+
+</html

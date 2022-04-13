@@ -23,7 +23,7 @@
         </div>
         <div class="inputsGroup">
           <input id="expirationDate" class="expirationDate" type="text" name="expirationDate" placeholder="MM/AA" />
-          <input id="cvvNumber" class="cvvNumber" type="text" name="cvvNumber" placeholder="cvv">
+          <input id="cvvNumber" class="cvvNumber" type="number" name="cvvNumber" placeholder="cvv">
         </div>
 
         <div class="inputsGroup">
@@ -31,7 +31,7 @@
           <input id="lastnameCard" class="lastnameCard" type="text" name="lastnameCard" placeholder="Apellido" />
         </div>
 
-      </form>s
+      </form>
       <button type="button" onclick="validation();" class="validation">
         Validar Tarjeta
       </button>
@@ -47,10 +47,12 @@
       <p id="fullName"></p>
 
       <div id="validMessage" class="message">
-        <img src="Imagen/check.png" alt=""> Tarjeta Válida
+        <img src="Imagen/check.png" alt="imagen check"> 
+        Tarjeta Válida
       </div>
       <div id="invalidMessage" class="message">
-        <img src="Imagen/close.png" alt="">Tarjeta No Válida
+        <img src="Imagen/close.png" alt="Imagen close">
+        Tarjeta No Válida
       </div>
 
     </section>
